@@ -1,0 +1,14 @@
+services:
+    tas2580.opensearch.main:
+        class: tas2580\opensearch\controller\main
+        arguments:
+            - @config
+            - %core.php_ext%
+            - @template
+    tas2580.opensearch.listener:
+        class: tas2580\opensearch\event\listener
+        arguments:
+            - @controller.helper
+            - @template
+        tags:
+            - { name: event.listener }
