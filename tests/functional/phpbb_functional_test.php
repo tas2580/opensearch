@@ -5,14 +5,6 @@
  */
 class phpbb_functional_test extends \tas2580\opensearch\tests\base\functional_test
 {
-	public function setUp()
-	{
-		parent::setUp();
-		$this->purge_cache();
-		$this->login();
-		$this->admin_login();
-	}
-
 	public function test_version_check()
 	{
 		// Log in to the ACP
