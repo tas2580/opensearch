@@ -28,7 +28,7 @@
 		},
 		"version-check": {
 			"host": "raw.githubusercontent.com",
-			"directory": "/tas2580/userinfo/master",
+			"directory": "/tas2580/opensearch/master",
 			"filename": "version-check.json",
 			"ssl": true
 		}
